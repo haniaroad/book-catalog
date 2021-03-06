@@ -48,3 +48,5 @@ C:\Users\derie\source\repos\BookCatalog\BookCatalog\obj\Debug\netcoreapp3.1\Book
 C:\Users\derie\source\repos\BookCatalog\BookCatalog\obj\Debug\netcoreapp3.1\BookCatalog.dll
 C:\Users\derie\source\repos\BookCatalog\BookCatalog\obj\Debug\netcoreapp3.1\BookCatalog.pdb
 C:\Users\derie\source\repos\BookCatalog\BookCatalog\obj\Debug\netcoreapp3.1\BookCatalog.genruntimeconfig.cache
+C:\Users\derie\source\repos\BookCatalog\BookCatalog\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs
+C:\Users\derie\source\repos\BookCatalog\BookCatalog\obj\Debug\netcoreapp3.1\Razor\Views\User\Create.cshtml.g.cs

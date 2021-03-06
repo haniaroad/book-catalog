@@ -1,0 +1,25 @@
+﻿@model User
+@*
+    @
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+<div class="text-center">
+    <h1 class="display-4">Sign Up</h1>
+    <form asp-action="Create">
+        <fieldset class="user-form">
+            <h2>Create an Account</h2>
+            @Html.HiddenFor(u => u.Id)
+            @Html.HiddenFor(u => u.SchemaVersion)
+            @Html.TextBoxFor(u => u.Username, new { placeholder = "Username"})
+            <br />
+            @Html.TextBoxFor(u => u.Email, new { placeholder = "Email" })
+            <br />
+            @Html.TextBoxFor(u => u.Password, new { placeholder = "Password" })
+            <br />
+            @Html.HiddenFor(u => u.Books)
+            <input type="submit" name="Create" />
+
+        </fieldset>
+    </form>
+</div>

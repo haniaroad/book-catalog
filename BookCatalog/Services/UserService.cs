@@ -1,5 +1,6 @@
 ﻿using BookCatalog.Models;
 using BookCatalog.Models.Database;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using System;
 using System.Collections.Generic;
@@ -28,13 +29,13 @@ namespace BookCatalog.Services
         public IList<User> Read() =>
             _users.Find(user => true).ToList();
 
-        public User Find(string id) =>
+        public User Find(ObjectId id) =>
             _users.Find(user => user.Id == id).SingleOrDefault();
 
         public void Update(User user) =>
             _users.ReplaceOne(usr => usr.Id == user.Id, user);
         
-        public void Delete(string id) =>
+        public void Delete(ObjectId id) =>
             _users.DeleteOne(user => user.Id == id);
 
     }
